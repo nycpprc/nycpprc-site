@@ -65,7 +65,10 @@ def main():
         past = fetch("PAST", "DESC", stop=lambda n: datetime.fromisoformat(n["dateTime"]) < cutoff)
     except Exception as ex:
         print("GraphQL failed, using __NEXT_DATA__ fallback:", ex, file=sys.stderr)
-        src, upcoming, past = "next_data", fallback_upcoming(), []
+        try:
+            src, upcoming, past = "next_data", fallback_upcoming(), []
+        except Exception as ex2:
+            sys.exit(f"ERROR: fallback also failed ({ex2}); existing data left untouched")
     upcoming = sorted([e for e in upcoming if datetime.fromisoformat(e["dateTime"]) >= now - timedelta(hours=3)], key=lambda e: e["dateTime"])
     hosts = {}
     for e in past + upcoming:
@@ -77,7 +80,10 @@ def main():
                  "profileUrl": f"https://www.meetup.com/members/{h['memberId']}/"})
             r["eventsHosted"] += 1
             if not r["lastHosted"] or e["dateTime"] > r["lastHosted"]: r["lastHosted"] = e["dateTime"]
-    out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
+    out = Path(args.out)
+    if not upcoming and not hosts:
+        sys.exit("ERROR: scrape returned no upcoming events and no hosts; refusing to overwrite existing data")
+    out.mkdir(parents=True, exist_ok=True)
     meta = {"generated": now.isoformat(timespec="seconds"), "source": src, "group": f"https://www.meetup.com/{GROUP}/"}
     (out / "events.json").write_text(json.dumps({**meta, "upcoming": [slim(e) for e in upcoming]}, indent=2, ensure_ascii=False))
     hl = sorted(hosts.values(), key=lambda h: (-h["eventsHosted"], h["name"] or ""))
