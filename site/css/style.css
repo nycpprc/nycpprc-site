@@ -50,5 +50,3 @@ h2{border-bottom:1px solid var(--line);padding-bottom:.4rem}.band h2{border-colo
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .newsletter{background:#efe3c6;padding:3rem 0;margin-top:3rem;text-align:center}.newsletter h2{border:0}
 .nl-form{display:flex;gap:.6rem;max-width:520px;margin:1rem auto 0;flex-wrap:wrap}.nl-form input{flex:1 1 240px;padding:.8rem 1.1rem;border:1px solid #cdbf9c;border-radius:999px;font:inherit;background:#fff}
-.social{list-style:none;padding:0;margin:1.5rem 0 0;display:flex;gap:.75rem;flex-wrap:wrap}.social a{display:inline-flex;align-items:center;justify-content:center;width:2.25rem;height:2.25rem;border-radius:50%;color:inherit;opacity:.75;transition:opacity .15s,background .15s}.social a:hover,.social a:focus-visible{opacity:1;background:rgba(0,0,0,.07)}.social-lg a{width:2.75rem;height:2.75rem}.social-lg svg{width:24px;height:24px}
-.social a.social-primary{width:auto;border-radius:999px;padding:0 .9rem;gap:.45rem;opacity:1;font-weight:600;background:#e2d9c6}.social a.social-primary:hover{background:#d8cdb6}
