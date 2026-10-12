@@ -1,0 +1,40 @@
+{
+  "name": "NYC Philosophy and Psychology Readers Community",
+  "links": [
+    {
+      "id": "meetup",
+      "label": "Meetup",
+      "url": "https://www.meetup.com/reading-philosophy/",
+      "show": true,
+      "primary": true
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "url": "https://x.com/nycpprc",
+      "show": true,
+      "primary": false
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/nycpprc/",
+      "show": true,
+      "primary": false
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/profile.php?id=61578337540711",
+      "show": false,
+      "primary": false
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/company/nyc-reading-philosophy/",
+      "show": false,
+      "primary": false
+    }
+  ]
+}
