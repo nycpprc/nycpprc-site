@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T11:31:54+00:00",
+  "generated": "2026-10-14T11:42:22+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
@@ -11,7 +11,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/316904065/",
-      "going": 3,
+      "going": 4,
       "hosts": [
         "Noah"
       ]
@@ -37,7 +37,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316299512/",
-      "going": 13,
+      "going": 14,
       "hosts": [
         "Brian Allen"
       ]
@@ -50,7 +50,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519217/",
-      "going": 18,
+      "going": 17,
       "hosts": [
         "Zach"
       ]
@@ -63,7 +63,7 @@
       "online": false,
       "venue": "Maiden Lane Public Atrium, 180 Maiden Ln, New York, NY 10038, USA",
       "url": "https://www.meetup.com/reading-philosophy/events/316945941/",
-      "going": 5,
+      "going": 7,
       "hosts": [
         "Sam JBrody"
       ]
@@ -76,7 +76,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/316883738/",
-      "going": 19,
+      "going": 20,
       "hosts": [
         "Ryan Bohman",
         "Stefano Andreoni"
@@ -116,7 +116,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519059/",
-      "going": 8,
+      "going": 10,
       "hosts": [
         "Zach"
       ]
@@ -142,7 +142,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316869703/",
-      "going": 13,
+      "going": 15,
       "hosts": [
         "Brian Allen"
       ]
@@ -181,7 +181,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316869745/",
-      "going": 6,
+      "going": 7,
       "hosts": [
         "Brian Allen"
       ]
