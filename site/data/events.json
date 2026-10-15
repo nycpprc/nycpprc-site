@@ -1,21 +1,8 @@
 {
-  "generated": "2026-10-14T11:42:22+00:00",
+  "generated": "2026-10-15T11:41:52+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
-    {
-      "id": "316904065",
-      "title": "A Thousand Plateaus Reading Group, week 2",
-      "start": "2026-10-14T19:30:00-04:00",
-      "end": "2026-10-14T21:00:00-04:00",
-      "online": true,
-      "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/316904065/",
-      "going": 4,
-      "hosts": [
-        "Noah"
-      ]
-    },
     {
       "id": "315299255",
       "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
@@ -24,7 +11,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315299255/",
-      "going": 11,
+      "going": 13,
       "hosts": [
         "Ryan Bohman"
       ]
@@ -37,7 +24,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316299512/",
-      "going": 14,
+      "going": 13,
       "hosts": [
         "Brian Allen"
       ]
@@ -50,7 +37,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519217/",
-      "going": 17,
+      "going": 18,
       "hosts": [
         "Zach"
       ]
@@ -66,6 +53,19 @@
       "going": 7,
       "hosts": [
         "Sam JBrody"
+      ]
+    },
+    {
+      "id": "316989430",
+      "title": "A Thousand Plateaus Reading Group, week 3",
+      "start": "2026-10-21T19:30:00-04:00",
+      "end": "2026-10-21T21:00:00-04:00",
+      "online": true,
+      "venue": "Online",
+      "url": "https://www.meetup.com/reading-philosophy/events/316989430/",
+      "going": 1,
+      "hosts": [
+        "Noah"
       ]
     },
     {
@@ -90,7 +90,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315299256/",
-      "going": 9,
+      "going": 11,
       "hosts": [
         "Ryan Bohman"
       ]
@@ -103,7 +103,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316299546/",
-      "going": 11,
+      "going": 12,
       "hosts": [
         "Brian Allen"
       ]
@@ -116,7 +116,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519059/",
-      "going": 10,
+      "going": 11,
       "hosts": [
         "Zach"
       ]
@@ -142,7 +142,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316869703/",
-      "going": 15,
+      "going": 17,
       "hosts": [
         "Brian Allen"
       ]
@@ -155,7 +155,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519079/",
-      "going": 8,
+      "going": 9,
       "hosts": [
         "Zach"
       ]
@@ -265,13 +265,13 @@
       ]
     },
     {
-      "id": "zsgnbvyjcqbgc",
+      "id": "316978319",
       "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
       "start": "2026-12-24T20:00:00-05:00",
       "end": "2026-12-24T21:30:00-05:00",
       "online": true,
       "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/zsgnbvyjcqbgc/",
+      "url": "https://www.meetup.com/reading-philosophy/events/316978319/",
       "going": 1,
       "hosts": [
         "Ryan Bohman"
@@ -291,26 +291,26 @@
       ]
     },
     {
-      "id": "zsgnbvykccbkb",
+      "id": "316978320",
       "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
       "start": "2027-01-07T20:00:00-05:00",
       "end": "2027-01-07T21:30:00-05:00",
       "online": true,
       "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/zsgnbvykccbkb/",
+      "url": "https://www.meetup.com/reading-philosophy/events/316978320/",
       "going": 1,
       "hosts": [
         "Ryan Bohman"
       ]
     },
     {
-      "id": "zsgnbvykccbsb",
+      "id": "316978324",
       "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
       "start": "2027-01-14T20:00:00-05:00",
       "end": "2027-01-14T21:30:00-05:00",
       "online": true,
       "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/zsgnbvykccbsb/",
+      "url": "https://www.meetup.com/reading-philosophy/events/316978324/",
       "going": 1,
       "hosts": [
         "Ryan Bohman"
@@ -343,13 +343,13 @@
       ]
     },
     {
-      "id": "zsgnbvykcdbgb",
+      "id": "316978333",
       "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
       "start": "2027-02-04T20:00:00-05:00",
       "end": "2027-02-04T21:30:00-05:00",
       "online": true,
       "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/zsgnbvykcdbgb/",
+      "url": "https://www.meetup.com/reading-philosophy/events/316978333/",
       "going": 1,
       "hosts": [
         "Ryan Bohman"
@@ -369,13 +369,13 @@
       ]
     },
     {
-      "id": "zsgnbvykcdbxb",
+      "id": "316978335",
       "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
       "start": "2027-02-18T20:00:00-05:00",
       "end": "2027-02-18T21:30:00-05:00",
       "online": true,
       "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/zsgnbvykcdbxb/",
+      "url": "https://www.meetup.com/reading-philosophy/events/316978335/",
       "going": 1,
       "hosts": [
         "Ryan Bohman"
