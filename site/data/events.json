@@ -1,21 +1,8 @@
 {
-  "generated": "2026-10-15T11:41:52+00:00",
+  "generated": "2026-10-16T11:41:12+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
-    {
-      "id": "315299255",
-      "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
-      "start": "2026-10-15T20:00:00-04:00",
-      "end": "2026-10-15T21:30:00-04:00",
-      "online": true,
-      "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/315299255/",
-      "going": 13,
-      "hosts": [
-        "Ryan Bohman"
-      ]
-    },
     {
       "id": "316299512",
       "title": "Articulating Reasons by Robert Brandom Week 3",
@@ -63,7 +50,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/316989430/",
-      "going": 1,
+      "going": 3,
       "hosts": [
         "Noah"
       ]
@@ -76,7 +63,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/316883738/",
-      "going": 20,
+      "going": 21,
       "hosts": [
         "Ryan Bohman",
         "Stefano Andreoni"
@@ -116,7 +103,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519059/",
-      "going": 11,
+      "going": 12,
       "hosts": [
         "Zach"
       ]
@@ -155,7 +142,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519079/",
-      "going": 9,
+      "going": 10,
       "hosts": [
         "Zach"
       ]
@@ -187,6 +174,19 @@
       ]
     },
     {
+      "id": "316518608",
+      "title": "Hamlet by William Shakespeare (week 1)",
+      "start": "2026-11-07T12:30:00-05:00",
+      "end": "2026-11-07T14:30:00-05:00",
+      "online": false,
+      "venue": "Pier 57, 25 11th Avenue, New York",
+      "url": "https://www.meetup.com/reading-philosophy/events/316518608/",
+      "going": 4,
+      "hosts": [
+        "Zach"
+      ]
+    },
+    {
       "id": "315430328",
       "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
       "start": "2026-11-12T20:00:00-05:00",
@@ -197,6 +197,19 @@
       "going": 6,
       "hosts": [
         "Ryan Bohman"
+      ]
+    },
+    {
+      "id": "316826947",
+      "title": "Hamlet by William Shakespeare (week 2)",
+      "start": "2026-11-14T12:30:00-05:00",
+      "end": "2026-11-14T14:30:00-05:00",
+      "online": false,
+      "venue": "Pier 57, 25 11th Avenue, New York",
+      "url": "https://www.meetup.com/reading-philosophy/events/316826947/",
+      "going": 2,
+      "hosts": [
+        "Zach"
       ]
     },
     {

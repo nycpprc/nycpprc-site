@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T11:41:52+00:00",
+  "generated": "2026-10-16T11:41:12+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "windowMonths": 6,
@@ -15,14 +15,6 @@
       "profileUrl": "https://www.meetup.com/members/363711293/"
     },
     {
-      "memberId": "210148796",
-      "name": "Brian Allen",
-      "photo": "https://secure.meetupstatic.com/photos/member/7/5/a/f/highres_323790127.jpeg",
-      "eventsHosted": 22,
-      "lastHosted": "2026-10-10T10:00:00-04:00",
-      "profileUrl": "https://www.meetup.com/members/210148796/"
-    },
-    {
       "memberId": "60971832",
       "name": "Zach",
       "photo": "https://secure.meetupstatic.com/photos/member/5/1/4/3/highres_310520803.jpeg",
@@ -31,11 +23,19 @@
       "profileUrl": "https://www.meetup.com/members/60971832/"
     },
     {
+      "memberId": "210148796",
+      "name": "Brian Allen",
+      "photo": "https://secure.meetupstatic.com/photos/member/7/5/a/f/highres_323790127.jpeg",
+      "eventsHosted": 21,
+      "lastHosted": "2026-10-10T10:00:00-04:00",
+      "profileUrl": "https://www.meetup.com/members/210148796/"
+    },
+    {
       "memberId": "82943982",
       "name": "Ryan Bohman",
       "photo": "https://secure.meetupstatic.com/photos/member/7/4/a/1/highres_326369857.jpeg",
-      "eventsHosted": 17,
-      "lastHosted": "2026-10-08T20:00:00-04:00",
+      "eventsHosted": 18,
+      "lastHosted": "2026-10-15T20:00:00-04:00",
       "profileUrl": "https://www.meetup.com/members/82943982/"
     },
     {
@@ -55,20 +55,20 @@
       "profileUrl": "https://www.meetup.com/members/324422848/"
     },
     {
-      "memberId": "426402835",
-      "name": "Brent",
-      "photo": "https://secure.meetupstatic.com/photos/member/8/0/5/c/highres_323672860.jpeg",
-      "eventsHosted": 3,
-      "lastHosted": "2026-09-19T13:00:00-04:00",
-      "profileUrl": "https://www.meetup.com/members/426402835/"
-    },
-    {
       "memberId": "252201056",
       "name": "Jonathan",
       "photo": "https://secure.meetupstatic.com/photos/member/2/1/7/7/highres_322628567.jpeg",
       "eventsHosted": 3,
       "lastHosted": "2026-06-13T12:00:00-04:00",
       "profileUrl": "https://www.meetup.com/members/252201056/"
+    },
+    {
+      "memberId": "426402835",
+      "name": "Brent",
+      "photo": "https://secure.meetupstatic.com/photos/member/8/0/5/c/highres_323672860.jpeg",
+      "eventsHosted": 2,
+      "lastHosted": "2026-09-19T13:00:00-04:00",
+      "profileUrl": "https://www.meetup.com/members/426402835/"
     },
     {
       "memberId": "191942797",
