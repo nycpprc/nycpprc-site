@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T11:36:33+00:00",
+  "generated": "2026-10-18T11:36:14+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "windowMonths": 6,
@@ -18,16 +18,16 @@
       "memberId": "60971832",
       "name": "Zach",
       "photo": "https://secure.meetupstatic.com/photos/member/5/1/4/3/highres_310520803.jpeg",
-      "eventsHosted": 22,
-      "lastHosted": "2026-10-10T12:30:00-04:00",
+      "eventsHosted": 23,
+      "lastHosted": "2026-10-17T12:30:00-04:00",
       "profileUrl": "https://www.meetup.com/members/60971832/"
     },
     {
       "memberId": "210148796",
       "name": "Brian Allen",
       "photo": "https://secure.meetupstatic.com/photos/member/7/5/a/f/highres_323790127.jpeg",
-      "eventsHosted": 21,
-      "lastHosted": "2026-10-10T10:00:00-04:00",
+      "eventsHosted": 22,
+      "lastHosted": "2026-10-17T10:00:00-04:00",
       "profileUrl": "https://www.meetup.com/members/210148796/"
     },
     {
