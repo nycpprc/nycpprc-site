@@ -1,21 +1,8 @@
 {
-  "generated": "2026-10-18T11:36:14+00:00",
+  "generated": "2026-10-19T11:42:30+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
-    {
-      "id": "316945941",
-      "title": "Hegel's Phenomenology of Spirit (week 2)",
-      "start": "2026-10-18T16:00:00-04:00",
-      "end": "2026-10-18T18:00:00-04:00",
-      "online": false,
-      "venue": "Maiden Lane Public Atrium, 180 Maiden Ln, New York, NY 10038, USA",
-      "url": "https://www.meetup.com/reading-philosophy/events/316945941/",
-      "going": 11,
-      "hosts": [
-        "Sam JBrody"
-      ]
-    },
     {
       "id": "316989430",
       "title": "A Thousand Plateaus Reading Group, week 3",
@@ -37,7 +24,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/316883738/",
-      "going": 24,
+      "going": 27,
       "hosts": [
         "Ryan Bohman",
         "Stefano Andreoni"
@@ -51,7 +38,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315299256/",
-      "going": 13,
+      "going": 15,
       "hosts": [
         "Ryan Bohman"
       ]
@@ -64,7 +51,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316299546/",
-      "going": 13,
+      "going": 14,
       "hosts": [
         "Brian Allen"
       ]
@@ -77,7 +64,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519059/",
-      "going": 11,
+      "going": 14,
       "hosts": [
         "Zach"
       ]
@@ -103,7 +90,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316869703/",
-      "going": 17,
+      "going": 16,
       "hosts": [
         "Brian Allen"
       ]
@@ -116,7 +103,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519079/",
-      "going": 13,
+      "going": 14,
       "hosts": [
         "Zach"
       ]
