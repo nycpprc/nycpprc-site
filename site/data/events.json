@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T11:42:30+00:00",
+  "generated": "2026-10-20T11:41:14+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
@@ -11,7 +11,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/316989430/",
-      "going": 4,
+      "going": 5,
       "hosts": [
         "Noah"
       ]
@@ -24,7 +24,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/316883738/",
-      "going": 27,
+      "going": 28,
       "hosts": [
         "Ryan Bohman",
         "Stefano Andreoni"
@@ -64,9 +64,22 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519059/",
-      "going": 14,
+      "going": 15,
       "hosts": [
         "Zach"
+      ]
+    },
+    {
+      "id": "317050788",
+      "title": "Hegel's Phenomenology of Spirit (week 3)",
+      "start": "2026-10-25T16:00:00-04:00",
+      "end": "2026-10-25T18:00:00-04:00",
+      "online": false,
+      "venue": "Maiden Lane Public Atrium, 180 Maiden Ln, New York, NY 10038, USA",
+      "url": "https://www.meetup.com/reading-philosophy/events/317050788/",
+      "going": 2,
+      "hosts": [
+        "Sam JBrody"
       ]
     },
     {
@@ -129,7 +142,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316869745/",
-      "going": 7,
+      "going": 9,
       "hosts": [
         "Brian Allen"
       ]
