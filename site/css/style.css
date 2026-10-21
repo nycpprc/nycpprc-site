@@ -61,3 +61,8 @@ h2{border-bottom:1px solid var(--line);padding-bottom:.4rem}.band h2{border-colo
 @media(min-width:900px){.cards{grid-template-columns:repeat(6,1fr)}.cards>.card{grid-column:span 2}.cards>.card:nth-child(3n+1):nth-last-child(2),.cards>.card:nth-child(3n+1):nth-last-child(2)~.card{grid-column:span 3}.cards>.card:nth-child(3n+1):last-child{grid-column:span 6}}
 .card h3 .ext-nw{color:inherit;transition:none}.card:hover h3 .ext-nw{margin-left:0}
 @media(min-width:600px) and (max-width:899px){.cards{grid-template-columns:1fr 1fr}.cards>.card:nth-child(odd):last-child{grid-column:span 2}}
+.nl-callout{background:#fff;border:1px solid #e6dcc4;border-left:4px solid var(--gold);border-radius:var(--r);padding:1.4rem 1.5rem;margin:1.5rem 0;text-align:left}
+.nl-callout .nl-callout-h{margin:0 0 .4rem;border:0;padding:0}
+.nl-callout>p{margin:0 0 .2rem}.nl-callout .nl-form{margin:.8rem 0 0;max-width:none}.nl-callout .small{margin:.6rem 0 0}
+.nl-callout-wrap{margin-top:2rem}.gf-thanks .nl-callout{margin-top:1.4rem;background:#fffaf0}
+@media(max-width:520px){.nl-callout .nl-form .btn{flex:1 1 100%}}

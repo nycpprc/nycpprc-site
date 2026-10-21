@@ -1,3 +1,5 @@
+/* GA4 helper: no-op if gtag is missing (blocked or not loaded). */
+function track(n,p){try{if(typeof window.gtag==='function')window.gtag('event',n,p||{});}catch(e){}}
 const t=document.querySelector('.nav-toggle'),n=document.getElementById('nav');
 t&&t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -35,7 +37,7 @@ if(evEl){let all=[],f='all',shown=8;const more=document.getElementById('more');
       var s=document.createElement('script'),done=false;
       function end(ok,msg){if(done)return;done=true;try{delete window[cb];}catch(x){window[cb]=undefined;}s.remove();clearTimeout(t);
         if(btn)btn.disabled=false;st.textContent=msg;st.className='mc-status '+(ok?'mc-ok':'mc-err');if(ok)f.reset();}
-      window[cb]=function(r){r=r||{};end(r.result==='success',r.result==='success'?"Thanks, you're subscribed.":nice(clean(r.msg)));};
+      window[cb]=function(r){r=r||{};if(r.result==='success')track('sign_up',{method:'newsletter',form_location:f.getAttribute('data-form-location')||(location.pathname.replace(/^\/|\.html$/g,'')||'home')});end(r.result==='success',r.result==='success'?"Thanks, you're subscribed.":nice(clean(r.msg)));};
       var t=setTimeout(function(){end(false,'Could not reach the signup service. Please try again.');},12000);
       s.onerror=function(){end(false,'Could not reach the signup service. Please try again.');};
       if(btn)btn.disabled=true;st.className='mc-status';st.textContent='Subscribing…';
@@ -62,9 +64,12 @@ if(evEl){let all=[],f='all',shown=8;const more=document.getElementById('more');
       if(opt&&opt.checked&&!(email&&emEl.checkValidity())){st.className='gf-status mc-err';st.textContent='Please enter a valid email address to get the newsletter.';emEl&&emEl.focus();return;}
       btn.disabled=true;st.className='gf-status';st.textContent='Sending…';
       fetch(f.action,{method:'POST',mode:'no-cors',body:body}).then(function(){
+        track('generate_lead',{form_name:f.dataset.formName||''});
         var mc=opt&&opt.checked?mcSubscribe(email,f.dataset.mcTag):Promise.resolve(false);
         return mc.then(function(r){
           var th=f.parentNode.querySelector('.gf-thanks');
+          if(r&&r.result==='success')track('sign_up',{method:'newsletter',form_location:(f.dataset.formName||'form')+'-optin'});
+          var nlc=th.querySelector('.nl-callout');if(nlc&&opt&&opt.checked)nlc.hidden=true;
           if(r!==false){var p=document.createElement('p');p.className='mc-status '+(r&&(r.result==='success'||/already subscribed/i.test(r.msg))?'mc-ok':'mc-err');
             p.textContent=r&&r.result==='success'?'Almost done: check your inbox to confirm your newsletter subscription.':r&&/already subscribed/i.test(r.msg)?"You're already on the newsletter list.":'We couldn’t sign you up for the newsletter just now; you can try again from the form at the bottom of the page.';th.appendChild(p);}
           f.hidden=true;th.hidden=false;th.focus();
