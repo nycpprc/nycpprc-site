@@ -50,3 +50,5 @@ h2{border-bottom:1px solid var(--line);padding-bottom:.4rem}.band h2{border-colo
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .newsletter{background:#efe3c6;padding:3rem 0;margin-top:3rem;text-align:center}.newsletter h2{border:0}
 .nl-form{display:flex;gap:.6rem;max-width:520px;margin:1rem auto 0;flex-wrap:wrap}.nl-form input{flex:1 1 240px;padding:.8rem 1.1rem;border:1px solid #cdbf9c;border-radius:999px;font:inherit;background:#fff}
+.nl-form .nl-fname{flex:1 1 160px}.newsletter .small{margin-top:.8rem}
+.foot-nl{flex:1 1 280px;max-width:360px}.nl-mini{margin:.5rem 0 0;max-width:none}.nl-mini input{flex:1 1 170px;padding:.6rem .9rem}.nl-mini .btn{padding:.6rem 1rem}.foot-nl .small{margin:.4rem 0 0;font-size:.85rem}
