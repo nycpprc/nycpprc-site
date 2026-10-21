@@ -53,13 +53,12 @@ if(evEl){let all=[],f='all',shown=8;const more=document.getElementById('more');
     function fin(r){clearTimeout(t);try{delete window[cb]}catch(x){window[cb]=undefined}s.remove();res(r)}
     window[cb]=fin;s.onerror=function(){fin(null)};s.src=MC+'&c='+cb+'&'+q.toString();document.body.appendChild(s);});}
   document.querySelectorAll('form.gform').forEach(function(f){
-    var opt=f.querySelector('[data-mc-optin]'),box=f.querySelector('.gf-nl-email'),st=f.querySelector('.gf-status'),btn=f.querySelector('[type=submit]');
-    if(opt&&box)opt.addEventListener('change',function(){box.hidden=!opt.checked;});
+    var opt=f.querySelector('[data-mc-optin]'),st=f.querySelector('.gf-status'),btn=f.querySelector('[type=submit]');
     f.addEventListener('submit',function(e){
       e.preventDefault();if(btn.disabled)return;
       var fd=new FormData(f),body=new URLSearchParams();
       fd.forEach(function(v,k){if(/^entry\.\d+(\.other_option_response)?$/.test(k))body.append(k,v);});
-      var emEl=f.querySelector('[data-mc-email]'+(box?'#'+box.querySelector('input').id:'')),email=emEl&&emEl.value.trim();
+      var emEl=f.querySelector('[data-mc-email]'),email=emEl&&emEl.value.trim();
       if(opt&&opt.checked&&!(email&&emEl.checkValidity())){st.className='gf-status mc-err';st.textContent='Please enter a valid email address to get the newsletter.';emEl&&emEl.focus();return;}
       btn.disabled=true;st.className='gf-status';st.textContent='Sending…';
       fetch(f.action,{method:'POST',mode:'no-cors',body:body}).then(function(){
@@ -74,8 +73,3 @@ if(evEl){let all=[],f='all',shown=8;const more=document.getElementById('more');
     });
   });
 })();
-/* Contact topic: site-only select, prepended to the Message entry on submit; ?topic= preselects. Runs before the gform submit handler (capture). */
-(function(){document.querySelectorAll('[data-gf-topic]').forEach(function(sel){
-  var t=new URLSearchParams(location.search).get('topic');if(t)[].forEach.call(sel.options,function(o){if(o.value===t)sel.value=t;});
-  var f=sel.form,ta=f.querySelector('[name="'+sel.dataset.gfTarget+'"]');
-  f.addEventListener('submit',function(){if(!/^\[[^\]]+\] /.test(ta.value))ta.value='['+sel.value+'] '+ta.value;},true);});})();
