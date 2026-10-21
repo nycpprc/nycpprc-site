@@ -73,3 +73,24 @@ if(evEl){let all=[],f='all',shown=8;const more=document.getElementById('more');
     });
   });
 })();
+/* New-tab links: external icon + screen-reader hint, applied site-wide (incl. JS-rendered links). */
+(function(){
+  function mark(a){
+    if(a.dataset.ext)return;a.dataset.ext='1';
+    var rel=(a.getAttribute('rel')||'').split(/\s+/);if(rel.indexOf('noopener')<0){rel.push('noopener');a.setAttribute('rel',rel.join(' ').trim());}
+    var sr=document.createElement('span');sr.className='sr';sr.textContent=' (opens in a new tab)';
+    var iconOnly=!a.textContent.trim();
+    var host=a.querySelector('h1,h2,h3,h4')||a;
+    if(!iconOnly){var ic=document.createElement('span');ic.className='ext-icon';ic.setAttribute('aria-hidden','true');
+      var arrow=host.querySelector(':scope > span[aria-hidden="true"]:last-child');
+      var w=document.createTreeWalker(host,NodeFilter.SHOW_TEXT),t,last=null;while(t=w.nextNode())if(t.nodeValue.trim()&&!(arrow&&arrow.contains(t)))last=t;
+      var nw=document.createElement('span');nw.className='ext-nw';
+      if(last){var m=last.nodeValue.match(/^([\s\S]*?)(\S+)(\s*)$/);last.nodeValue=m[1];nw.textContent=m[2];last.parentNode.insertBefore(nw,last.nextSibling);if(m[3])nw.parentNode.insertBefore(document.createTextNode(m[3]),nw.nextSibling);}
+      else host.insertBefore(nw,arrow);
+      nw.appendChild(ic);}
+    host.appendChild(sr);
+  }
+  function scan(r){(r.querySelectorAll?r:document).querySelectorAll('a[target="_blank"]').forEach(mark);if(r.matches&&r.matches('a[target="_blank"]'))mark(r);}
+  scan(document);
+  new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1)scan(n);});});}).observe(document.body,{childList:true,subtree:true});
+})();
