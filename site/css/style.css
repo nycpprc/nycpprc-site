@@ -52,3 +52,4 @@ h2{border-bottom:1px solid var(--line);padding-bottom:.4rem}.band h2{border-colo
 .nl-form{display:flex;gap:.6rem;max-width:520px;margin:1rem auto 0;flex-wrap:wrap}.nl-form input{flex:1 1 240px;padding:.8rem 1.1rem;border:1px solid #cdbf9c;border-radius:999px;font:inherit;background:#fff}
 .nl-form .nl-fname{flex:1 1 160px}.newsletter .small{margin-top:.8rem}
 .foot-nl{flex:1 1 280px;max-width:360px}.nl-mini{margin:.5rem 0 0;max-width:none}.nl-mini input{flex:1 1 170px;padding:.6rem .9rem}.nl-mini .btn{padding:.6rem 1rem}.foot-nl .small{margin:.4rem 0 0;font-size:.85rem}
+.mc-status{margin:.6rem 0 0;font-size:.9rem;min-height:1em}.mc-status:empty{display:none}.mc-ok{color:#1f6b3a}.mc-err{color:#a3361f}.nl-form button:disabled{opacity:.6;cursor:wait}
