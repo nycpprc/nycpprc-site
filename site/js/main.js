@@ -43,3 +43,39 @@ if(evEl){let all=[],f='all',shown=8;const more=document.getElementById('more');
     });
   });
 })();
+/* Native forms posting to Google Forms' public formResponse endpoint (no-cors, opaque response), with optional Mailchimp opt-in via the same JSONP endpoint. */
+(function(){
+  var MC='https://art.us13.list-manage.com/subscribe/post?u=26b814ae42c6bb5b260c0ebf5&id=24033953d1';
+  function mcSubscribe(email,tag){return new Promise(function(res){
+    var cb='mcCb'+Date.now()+Math.floor(Math.random()*1e4),s=document.createElement('script');
+    var q=new URLSearchParams({EMAIL:email,tags:tag,b_26b814ae42c6bb5b260c0ebf5_24033953d1:''});
+    var t=setTimeout(function(){fin(null)},12000);
+    function fin(r){clearTimeout(t);try{delete window[cb]}catch(x){window[cb]=undefined}s.remove();res(r)}
+    window[cb]=fin;s.onerror=function(){fin(null)};s.src=MC+'&c='+cb+'&'+q.toString();document.body.appendChild(s);});}
+  document.querySelectorAll('form.gform').forEach(function(f){
+    var opt=f.querySelector('[data-mc-optin]'),box=f.querySelector('.gf-nl-email'),st=f.querySelector('.gf-status'),btn=f.querySelector('[type=submit]');
+    if(opt&&box)opt.addEventListener('change',function(){box.hidden=!opt.checked;});
+    f.addEventListener('submit',function(e){
+      e.preventDefault();if(btn.disabled)return;
+      var fd=new FormData(f),body=new URLSearchParams();
+      fd.forEach(function(v,k){if(/^entry\.\d+(\.other_option_response)?$/.test(k))body.append(k,v);});
+      var emEl=f.querySelector('[data-mc-email]'+(box?'#'+box.querySelector('input').id:'')),email=emEl&&emEl.value.trim();
+      if(opt&&opt.checked&&!(email&&emEl.checkValidity())){st.className='gf-status mc-err';st.textContent='Please enter a valid email address to get the newsletter.';emEl&&emEl.focus();return;}
+      btn.disabled=true;st.className='gf-status';st.textContent='Sending…';
+      fetch(f.action,{method:'POST',mode:'no-cors',body:body}).then(function(){
+        var mc=opt&&opt.checked?mcSubscribe(email,f.dataset.mcTag):Promise.resolve(false);
+        return mc.then(function(r){
+          var th=f.parentNode.querySelector('.gf-thanks');
+          if(r!==false){var p=document.createElement('p');p.className='mc-status '+(r&&(r.result==='success'||/already subscribed/i.test(r.msg))?'mc-ok':'mc-err');
+            p.textContent=r&&r.result==='success'?'Almost done: check your inbox to confirm your newsletter subscription.':r&&/already subscribed/i.test(r.msg)?"You're already on the newsletter list.":'We couldn’t sign you up for the newsletter just now; you can try again from the form at the bottom of the page.';th.appendChild(p);}
+          f.hidden=true;th.hidden=false;th.focus();
+        });
+      }).catch(function(){btn.disabled=false;st.className='gf-status mc-err';st.textContent='Could not send your response. Please try again, or use the Google Form link below.';});
+    });
+  });
+})();
+/* Contact topic: site-only select, prepended to the Message entry on submit; ?topic= preselects. Runs before the gform submit handler (capture). */
+(function(){document.querySelectorAll('[data-gf-topic]').forEach(function(sel){
+  var t=new URLSearchParams(location.search).get('topic');if(t)[].forEach.call(sel.options,function(o){if(o.value===t)sel.value=t;});
+  var f=sel.form,ta=f.querySelector('[name="'+sel.dataset.gfTarget+'"]');
+  f.addEventListener('submit',function(){if(!/^\[[^\]]+\] /.test(ta.value))ta.value='['+sel.value+'] '+ta.value;},true);});})();

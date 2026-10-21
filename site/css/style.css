@@ -32,6 +32,7 @@ nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;align-items:c
 .page-head{padding:3.5rem 0 1rem;border-bottom:1px solid var(--line);background:#f3efe6}
 .faq details{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.3rem;margin-bottom:.8rem}.faq summary{font:600 1.15rem var(--serif);cursor:pointer;color:var(--navy-d)}
 .form-embed iframe{width:100%;height:1100px;border:0;border-radius:var(--r);background:#fff}
+.gform{background:#fff;border:1px solid #e6dcc4;border-radius:var(--r);padding:1.5rem;margin:1rem 0}.gf-field{margin:0 0 1.2rem;border:0;padding:0}.gf-field>label,.gf-field legend{display:block;font-weight:600;margin:0 0 .4rem}.gform input[type=text],.gform input[type=email],.gform textarea{width:100%;box-sizing:border-box;padding:.8rem 1.1rem;border:1px solid #cdbf9c;border-radius:999px;font:inherit;background:#fff}.gform textarea{border-radius:var(--r);resize:vertical}.gf-opt{display:flex;align-items:center;gap:.5rem;margin:.35rem 0;font-weight:400;flex-wrap:wrap}.gf-other input[type=text]{flex:1 1 180px;width:auto;padding:.45rem .9rem}.gf-nl-email{margin-top:.6rem}.gform button:disabled{opacity:.6;cursor:wait}.gf-status:empty{display:none}.gf-status{margin:.6rem 0 0;font-size:.9rem}.gf-thanks{background:#fff;border:1px solid #e6dcc4;border-radius:var(--r);padding:1.5rem;margin:1rem 0}
 .placeholder{border:2px dashed var(--gold);border-radius:var(--r);padding:1.5rem;background:#fffaf0}
 .news{display:grid;gap:.8rem}.news article{background:#fff;border-left:4px solid var(--gold);padding:1rem 1.2rem;border-radius:8px}
 .muted{color:var(--muted)}.small{font-size:.85rem}
@@ -53,3 +54,4 @@ h2{border-bottom:1px solid var(--line);padding-bottom:.4rem}.band h2{border-colo
 .nl-form .nl-fname{flex:1 1 160px}.newsletter .small{margin-top:.8rem}
 .foot-nl{flex:1 1 280px;max-width:360px}.nl-mini{margin:.5rem 0 0;max-width:none}.nl-mini input{flex:1 1 170px;padding:.6rem .9rem}.nl-mini .btn{padding:.6rem 1rem}.foot-nl .small{margin:.4rem 0 0;font-size:.85rem}
 .mc-status{margin:.6rem 0 0;font-size:.9rem;min-height:1em}.mc-status:empty{display:none}.mc-ok{color:#1f6b3a}.mc-err{color:#a3361f}.nl-form button:disabled{opacity:.6;cursor:wait}
+.gform select{width:100%;box-sizing:border-box;padding:.8rem 1.1rem;border:1px solid #cdbf9c;border-radius:999px;font:inherit;background:#fff}.donate-box{background:#fff;border:1px solid #e6dcc4;border-radius:var(--r);padding:1.5rem;margin:1rem 0}.donate-note{background:#fffaf0;border-left:4px solid var(--gold);padding:.9rem 1.1rem;border-radius:8px}
