@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T11:41:14+00:00",
+  "generated": "2026-10-21T11:41:47+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
@@ -51,7 +51,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316299546/",
-      "going": 14,
+      "going": 13,
       "hosts": [
         "Brian Allen"
       ]
@@ -64,7 +64,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519059/",
-      "going": 15,
+      "going": 13,
       "hosts": [
         "Zach"
       ]
@@ -77,7 +77,7 @@
       "online": false,
       "venue": "Maiden Lane Public Atrium, 180 Maiden Ln, New York, NY 10038, USA",
       "url": "https://www.meetup.com/reading-philosophy/events/317050788/",
-      "going": 2,
+      "going": 4,
       "hosts": [
         "Sam JBrody"
       ]
@@ -116,7 +116,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519079/",
-      "going": 14,
+      "going": 16,
       "hosts": [
         "Zach"
       ]
@@ -155,7 +155,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316518608/",
-      "going": 6,
+      "going": 12,
       "hosts": [
         "Zach"
       ]
@@ -181,7 +181,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316826947/",
-      "going": 4,
+      "going": 6,
       "hosts": [
         "Zach"
       ]
