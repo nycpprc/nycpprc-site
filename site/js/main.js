@@ -83,7 +83,11 @@ if(evEl){let all=[],f='all',shown=8;const more=document.getElementById('more');
     var host=a.querySelector('h1,h2,h3,h4')||a;
     if(!iconOnly){var ic=document.createElement('span');ic.className='ext-icon';ic.setAttribute('aria-hidden','true');
       var arrow=host.querySelector(':scope > span[aria-hidden="true"]:last-child');
-      host.insertBefore(document.createTextNode('\u2060'),arrow);host.insertBefore(ic,arrow);}
+      var w=document.createTreeWalker(host,NodeFilter.SHOW_TEXT),t,last=null;while(t=w.nextNode())if(t.nodeValue.trim()&&!(arrow&&arrow.contains(t)))last=t;
+      var nw=document.createElement('span');nw.className='ext-nw';
+      if(last){var m=last.nodeValue.match(/^([\s\S]*?)(\S+)(\s*)$/);last.nodeValue=m[1];nw.textContent=m[2];last.parentNode.insertBefore(nw,last.nextSibling);if(m[3])nw.parentNode.insertBefore(document.createTextNode(m[3]),nw.nextSibling);}
+      else host.insertBefore(nw,arrow);
+      nw.appendChild(ic);}
     host.appendChild(sr);
   }
   function scan(r){(r.querySelectorAll?r:document).querySelectorAll('a[target="_blank"]').forEach(mark);if(r.matches&&r.matches('a[target="_blank"]'))mark(r);}
