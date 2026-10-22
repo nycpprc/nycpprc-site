@@ -1,21 +1,8 @@
 {
-  "generated": "2026-10-21T11:41:47+00:00",
+  "generated": "2026-10-22T11:41:53+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
-    {
-      "id": "316989430",
-      "title": "A Thousand Plateaus Reading Group, week 3",
-      "start": "2026-10-21T19:30:00-04:00",
-      "end": "2026-10-21T21:00:00-04:00",
-      "online": true,
-      "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/316989430/",
-      "going": 5,
-      "hosts": [
-        "Noah"
-      ]
-    },
     {
       "id": "316883738",
       "title": "Predictive brain waves",
@@ -24,7 +11,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/316883738/",
-      "going": 28,
+      "going": 31,
       "hosts": [
         "Ryan Bohman",
         "Stefano Andreoni"
@@ -38,7 +25,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315299256/",
-      "going": 15,
+      "going": 16,
       "hosts": [
         "Ryan Bohman"
       ]
@@ -64,7 +51,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519059/",
-      "going": 13,
+      "going": 12,
       "hosts": [
         "Zach"
       ]
@@ -77,7 +64,7 @@
       "online": false,
       "venue": "Maiden Lane Public Atrium, 180 Maiden Ln, New York, NY 10038, USA",
       "url": "https://www.meetup.com/reading-philosophy/events/317050788/",
-      "going": 4,
+      "going": 5,
       "hosts": [
         "Sam JBrody"
       ]
