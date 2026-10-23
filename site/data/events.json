@@ -1,35 +1,8 @@
 {
-  "generated": "2026-10-22T11:41:53+00:00",
+  "generated": "2026-10-23T11:42:52+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
-    {
-      "id": "316883738",
-      "title": "Predictive brain waves",
-      "start": "2026-10-22T18:30:00-04:00",
-      "end": "2026-10-22T19:30:00-04:00",
-      "online": true,
-      "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/316883738/",
-      "going": 31,
-      "hosts": [
-        "Ryan Bohman",
-        "Stefano Andreoni"
-      ]
-    },
-    {
-      "id": "315299256",
-      "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
-      "start": "2026-10-22T20:00:00-04:00",
-      "end": "2026-10-22T21:30:00-04:00",
-      "online": true,
-      "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/315299256/",
-      "going": 16,
-      "hosts": [
-        "Ryan Bohman"
-      ]
-    },
     {
       "id": "316299546",
       "title": "Articulating Reasons by Robert Brandom Week 4",
@@ -67,6 +40,19 @@
       "going": 5,
       "hosts": [
         "Sam JBrody"
+      ]
+    },
+    {
+      "id": "317096631",
+      "title": "A Thousand Plateaus Reading Group, week 4",
+      "start": "2026-10-28T19:30:00-04:00",
+      "end": "2026-10-28T21:00:00-04:00",
+      "online": true,
+      "venue": "Online",
+      "url": "https://www.meetup.com/reading-philosophy/events/317096631/",
+      "going": 3,
+      "hosts": [
+        "Noah"
       ]
     },
     {
