@@ -2,8 +2,8 @@
 <title>Page not found · NYCPPRC</title>
 <script>
 // SPA fallback for the members app at /app/: GitHub Pages serves this file for unknown paths.
-(function(){var l=location;if(l.pathname.indexOf('/app/')===0){
-  l.replace('/app/?p='+encodeURIComponent(l.pathname.slice(4)+l.search)+l.hash);}})();
+(function(){var B='/app',l=location;if(l.pathname.indexOf(B+'/')===0){
+  l.replace(B+'/?p='+encodeURIComponent(l.pathname.slice(B.length)+l.search)+l.hash);}})();
 </script>
 <style>body{font:17px/1.6 Inter,system-ui,sans-serif;background:#faf7f1;color:#1d2433;display:grid;place-items:center;min-height:90vh;margin:0}a{color:#1c3d6e}</style>
 </head><body><p>Page not found. <a href="/">Go to nycpprc.org</a></p></body></html>
