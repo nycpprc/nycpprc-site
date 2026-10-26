@@ -66,3 +66,8 @@ h2{border-bottom:1px solid var(--line);padding-bottom:.4rem}.band h2{border-colo
 .nl-callout>p{margin:0 0 .2rem}.nl-callout .nl-form{margin:.8rem 0 0;max-width:none}.nl-callout .small{margin:.6rem 0 0}
 .nl-callout-wrap{margin-top:2rem}.gf-thanks .nl-callout{margin-top:1.4rem;background:#fffaf0}
 @media(max-width:520px){.nl-callout .nl-form .btn{flex:1 1 100%}}
+.legal h2{font-size:clamp(1.35rem,2.2vw,1.65rem);margin-top:1.8rem}
+.legal h2:first-child{margin-top:.4rem}
+.legal ul{margin:.2rem 0 1rem;padding-left:1.2rem}
+.legal li{margin:.35rem 0}
+.page-head .updated{margin:0}
