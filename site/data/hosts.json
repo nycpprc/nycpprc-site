@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T11:38:00+00:00",
+  "generated": "2026-10-26T12:34:55+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "windowMonths": 6,
@@ -34,7 +34,7 @@
       "memberId": "82943982",
       "name": "Ryan Bohman",
       "photo": "https://secure.meetupstatic.com/photos/member/7/4/a/1/highres_326369857.jpeg",
-      "eventsHosted": 19,
+      "eventsHosted": 18,
       "lastHosted": "2026-10-22T20:00:00-04:00",
       "profileUrl": "https://www.meetup.com/members/82943982/"
     },
@@ -71,20 +71,20 @@
       "profileUrl": "https://www.meetup.com/members/191942797/"
     },
     {
+      "memberId": "373188013",
+      "name": "Sam JBrody",
+      "photo": "https://secure.meetupstatic.com/photos/member/a/9/d/a/highres_312943482.jpeg",
+      "eventsHosted": 3,
+      "lastHosted": "2026-10-25T16:00:00-04:00",
+      "profileUrl": "https://www.meetup.com/members/373188013/"
+    },
+    {
       "memberId": "426402835",
       "name": "Brent",
       "photo": "https://secure.meetupstatic.com/photos/member/8/0/5/c/highres_323672860.jpeg",
       "eventsHosted": 2,
       "lastHosted": "2026-09-19T13:00:00-04:00",
       "profileUrl": "https://www.meetup.com/members/426402835/"
-    },
-    {
-      "memberId": "373188013",
-      "name": "Sam JBrody",
-      "photo": "https://secure.meetupstatic.com/photos/member/a/9/d/a/highres_312943482.jpeg",
-      "eventsHosted": 2,
-      "lastHosted": "2026-10-18T16:00:00-04:00",
-      "profileUrl": "https://www.meetup.com/members/373188013/"
     },
     {
       "memberId": "14280782",
