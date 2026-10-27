@@ -1,1 +1,0 @@
-__d(function(g,r,i,a,m,e,d){"use strict";Object.defineProperty(e,'__esModule',{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return c}});var t=r(d[0]),n=r(d[1]),o=r(d[2]),u=r(d[3]);function c(){const c=(0,o.threadRoomId)((0,n.useLocalSearchParams)().id);return c?(0,u.jsx)(t.DirectThread,{roomId:c}):null}},785,[795,789,876,6]);
