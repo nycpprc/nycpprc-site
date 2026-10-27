@@ -23,13 +23,126 @@
         flex: 1;
       }
     </style>
-  <link rel="icon" href="/app/favicon.ico"/></head>
+  <link rel="icon" href="/app/favicon.ico"/>
+    <!--
+      Quiet Beta mark for the public preview only. This file is the GitHub Pages
+      shell for /app/preview (and for / after the homepage cutover). It is not
+      used by /app/. A later publish-web from nycpprc-app overwrites this file;
+      the lasting copy belongs next to the club name in PublicHome (preview.web.tsx).
+    -->
+    <style id="nycpprc-beta-style">
+      #nycpprc-beta {
+        position: fixed;
+        z-index: 5;
+        margin: 0;
+        padding: 1px 6px 2px;
+        border: 1px solid #c9a24a;
+        border-radius: 999px;
+        background: #f4ead2;
+        color: #1c3d6e;
+        font: 600 10px/1.4 ui-sans-serif, system-ui, sans-serif;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        pointer-events: none;
+        user-select: none;
+      }
+    </style>
+  </head>
 
   <body>
     <!-- Use static rendering with Expo Router to support running without JavaScript. -->
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
+    <p id="nycpprc-beta" hidden>Beta</p>
+    <script>
+      (function () {
+        var badge = document.getElementById("nycpprc-beta");
+        if (!badge) return;
+        function onPreview() {
+          var path = location.pathname.replace(/\/+$/, "") || "/";
+          return path === "/app/preview";
+        }
+        function visible(el) {
+          if (!el) return false;
+          var r = el.getBoundingClientRect();
+          return r.width > 8 && r.height > 8;
+        }
+        function wordmark() {
+          var root = document.getElementById("root");
+          if (!root) return null;
+          var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+          var node;
+          while ((node = walker.nextNode())) {
+            var value = node.nodeValue || "";
+            if (value.indexOf("NYC Philosophy") !== -1 && value.indexOf("Readers") === -1) {
+              var el = node.parentElement;
+              if (visible(el)) return el;
+            }
+          }
+          return null;
+        }
+        function logo() {
+          var root = document.getElementById("root");
+          if (!root) return null;
+          var nodes = root.querySelectorAll("[aria-label='NYCPPRC']");
+          for (var i = 0; i < nodes.length; i++) {
+            if (visible(nodes[i]) && nodes[i].getBoundingClientRect().height < 80) return nodes[i];
+          }
+          return null;
+        }
+        function place() {
+          if (!onPreview()) {
+            badge.hidden = true;
+            return;
+          }
+          var anchor = wordmark() || logo();
+          if (!anchor) {
+            badge.hidden = true;
+            return;
+          }
+          badge.hidden = false;
+          var r = anchor.getBoundingClientRect();
+          var top = r.top + (r.height - badge.offsetHeight) / 2;
+          var left = r.right + 8;
+          if (left + badge.offsetWidth > window.innerWidth - 12) {
+            left = Math.max(12, window.innerWidth - badge.offsetWidth - 12);
+            top = Math.max(8, r.top + 6);
+          }
+          badge.style.top = Math.max(8, top) + "px";
+          badge.style.left = Math.max(8, left) + "px";
+        }
+        var scheduled = false;
+        function schedule() {
+          if (scheduled) return;
+          scheduled = true;
+          requestAnimationFrame(function () {
+            scheduled = false;
+            place();
+          });
+        }
+        var push = history.pushState;
+        var replace = history.replaceState;
+        history.pushState = function () {
+          var result = push.apply(this, arguments);
+          schedule();
+          return result;
+        };
+        history.replaceState = function () {
+          var result = replace.apply(this, arguments);
+          schedule();
+          return result;
+        };
+        window.addEventListener("popstate", schedule);
+        window.addEventListener("resize", schedule);
+        var root = document.getElementById("root");
+        if (root && window.MutationObserver) {
+          new MutationObserver(schedule).observe(root, { childList: true, subtree: true, characterData: true });
+        }
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(schedule);
+        schedule();
+      })();
+    </script>
   <script src="/app/_expo/static/js/web/__expo-metro-runtime-8c088df87a31e4e6accd81c554ec290d.js" defer></script><script src="/app/_expo/static/js/web/__common-74145c0551975c2b2157385538e9667e.js" defer></script><script src="/app/_expo/static/js/web/entry-8730db208a0dbed3ac1805ab9ae280a0.js" defer></script>
 </body>
 </html>
