@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T12:34:55+00:00",
+  "generated": "2026-10-27T11:44:08+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
@@ -24,22 +24,9 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315299257/",
-      "going": 12,
+      "going": 14,
       "hosts": [
         "Ryan Bohman"
-      ]
-    },
-    {
-      "id": "316869703",
-      "title": "Empricism and the Philosophy of Mind Week 1",
-      "start": "2026-10-31T10:00:00-04:00",
-      "end": "2026-10-31T12:00:00-04:00",
-      "online": false,
-      "venue": "Pier 57, 25 11th Avenue, New York",
-      "url": "https://www.meetup.com/reading-philosophy/events/316869703/",
-      "going": 20,
-      "hosts": [
-        "Brian Allen"
       ]
     },
     {
@@ -50,9 +37,35 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519079/",
-      "going": 21,
+      "going": 22,
       "hosts": [
         "Zach"
+      ]
+    },
+    {
+      "id": "317146656",
+      "title": "Hegel's Phenomenology of Spirit (week 4)",
+      "start": "2026-11-01T16:00:00-05:00",
+      "end": "2026-11-01T18:00:00-05:00",
+      "online": false,
+      "venue": "Maiden Lane Public Atrium, 180 Maiden Ln, New York, NY 10038, USA",
+      "url": "https://www.meetup.com/reading-philosophy/events/317146656/",
+      "going": 6,
+      "hosts": [
+        "Sam JBrody"
+      ]
+    },
+    {
+      "id": "317148546",
+      "title": "Reading \"Paradise Lost\"",
+      "start": "2026-11-01T19:00:00-05:00",
+      "end": "2026-11-01T20:30:00-05:00",
+      "online": true,
+      "venue": "Online",
+      "url": "https://www.meetup.com/reading-philosophy/events/317148546/",
+      "going": 3,
+      "hosts": [
+        "Naomi"
       ]
     },
     {
@@ -63,22 +76,9 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315430325/",
-      "going": 6,
+      "going": 7,
       "hosts": [
         "Ryan Bohman"
-      ]
-    },
-    {
-      "id": "316869745",
-      "title": "Empricism and the Philosophy of Mind Week 2",
-      "start": "2026-11-07T10:00:00-05:00",
-      "end": "2026-11-07T12:00:00-05:00",
-      "online": false,
-      "venue": "Pier 57, 25 11th Avenue, New York",
-      "url": "https://www.meetup.com/reading-philosophy/events/316869745/",
-      "going": 10,
-      "hosts": [
-        "Brian Allen"
       ]
     },
     {
@@ -89,7 +89,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316518608/",
-      "going": 14,
+      "going": 16,
       "hosts": [
         "Zach"
       ]
@@ -102,7 +102,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315430328/",
-      "going": 6,
+      "going": 7,
       "hosts": [
         "Ryan Bohman"
       ]
@@ -128,7 +128,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315430330/",
-      "going": 6,
+      "going": 7,
       "hosts": [
         "Ryan Bohman"
       ]
