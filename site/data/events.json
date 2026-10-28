@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T11:44:08+00:00",
+  "generated": "2026-10-28T11:50:51+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
@@ -11,7 +11,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/317096631/",
-      "going": 5,
+      "going": 6,
       "hosts": [
         "Noah"
       ]
@@ -37,7 +37,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316519079/",
-      "going": 22,
+      "going": 25,
       "hosts": [
         "Zach"
       ]
@@ -63,7 +63,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/317148546/",
-      "going": 3,
+      "going": 5,
       "hosts": [
         "Naomi"
       ]
@@ -89,7 +89,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316518608/",
-      "going": 16,
+      "going": 18,
       "hosts": [
         "Zach"
       ]
@@ -131,6 +131,19 @@
       "going": 7,
       "hosts": [
         "Ryan Bohman"
+      ]
+    },
+    {
+      "id": "316212225",
+      "title": "Logic and Conversation by Paul Grice",
+      "start": "2026-11-21T12:30:00-05:00",
+      "end": "2026-11-21T14:30:00-05:00",
+      "online": false,
+      "venue": "Pier 57, 25 11th Avenue, New York",
+      "url": "https://www.meetup.com/reading-philosophy/events/316212225/",
+      "going": 6,
+      "hosts": [
+        "Zach"
       ]
     },
     {
