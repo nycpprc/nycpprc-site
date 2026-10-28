@@ -2,7 +2,6 @@
 function track(n,p){try{if(typeof window.gtag==='function')window.gtag('event',n,p||{});}catch(e){}}
 const t=document.querySelector('.nav-toggle'),n=document.getElementById('nav');
 t&&t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
-n&&n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t&&t.setAttribute('aria-expanded','false')}));
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const TZ={timeZone:'America/New_York'};
 const fmt=(d,o)=>new Intl.DateTimeFormat('en-US',{...TZ,...o}).format(d);
