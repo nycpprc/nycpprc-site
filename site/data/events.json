@@ -1,21 +1,8 @@
 {
-  "generated": "2026-10-28T11:50:51+00:00",
+  "generated": "2026-10-29T11:51:27+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
-    {
-      "id": "317096631",
-      "title": "A Thousand Plateaus Reading Group, week 4",
-      "start": "2026-10-28T19:30:00-04:00",
-      "end": "2026-10-28T21:00:00-04:00",
-      "online": true,
-      "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/317096631/",
-      "going": 6,
-      "hosts": [
-        "Noah"
-      ]
-    },
     {
       "id": "315299257",
       "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
@@ -24,7 +11,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315299257/",
-      "going": 14,
+      "going": 15,
       "hosts": [
         "Ryan Bohman"
       ]
@@ -63,9 +50,22 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/317148546/",
-      "going": 5,
+      "going": 7,
       "hosts": [
         "Naomi"
+      ]
+    },
+    {
+      "id": "317184133",
+      "title": "A Thousand Plateaus Reading Group, week 5",
+      "start": "2026-11-04T19:30:00-05:00",
+      "end": "2026-11-04T21:00:00-05:00",
+      "online": true,
+      "venue": "Online",
+      "url": "https://www.meetup.com/reading-philosophy/events/317184133/",
+      "going": 1,
+      "hosts": [
+        "Noah"
       ]
     },
     {
@@ -76,7 +76,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315430325/",
-      "going": 7,
+      "going": 8,
       "hosts": [
         "Ryan Bohman"
       ]
@@ -89,7 +89,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316518608/",
-      "going": 18,
+      "going": 19,
       "hosts": [
         "Zach"
       ]
@@ -102,7 +102,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315430328/",
-      "going": 7,
+      "going": 8,
       "hosts": [
         "Ryan Bohman"
       ]
@@ -115,7 +115,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316826947/",
-      "going": 8,
+      "going": 9,
       "hosts": [
         "Zach"
       ]
@@ -141,7 +141,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316212225/",
-      "going": 6,
+      "going": 8,
       "hosts": [
         "Zach"
       ]
@@ -154,7 +154,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/315430333/",
-      "going": 6,
+      "going": 7,
       "hosts": [
         "Ryan Bohman"
       ]
