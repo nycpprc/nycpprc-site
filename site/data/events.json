@@ -1,21 +1,8 @@
 {
-  "generated": "2026-10-29T11:51:27+00:00",
+  "generated": "2026-10-30T11:49:04+00:00",
   "source": "graphql",
   "group": "https://www.meetup.com/reading-philosophy/",
   "upcoming": [
-    {
-      "id": "315299257",
-      "title": "Homer’s Iliad: A Slow Reading and Panel Discussion",
-      "start": "2026-10-29T20:00:00-04:00",
-      "end": "2026-10-29T21:30:00-04:00",
-      "online": true,
-      "venue": "Online",
-      "url": "https://www.meetup.com/reading-philosophy/events/315299257/",
-      "going": 15,
-      "hosts": [
-        "Ryan Bohman"
-      ]
-    },
     {
       "id": "316519079",
       "title": "Macbeth by William Shakespeare (a Halloween reading!)",
@@ -63,7 +50,7 @@
       "online": true,
       "venue": "Online",
       "url": "https://www.meetup.com/reading-philosophy/events/317184133/",
-      "going": 1,
+      "going": 3,
       "hosts": [
         "Noah"
       ]
@@ -89,7 +76,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316518608/",
-      "going": 19,
+      "going": 20,
       "hosts": [
         "Zach"
       ]
@@ -141,7 +128,7 @@
       "online": false,
       "venue": "Pier 57, 25 11th Avenue, New York",
       "url": "https://www.meetup.com/reading-philosophy/events/316212225/",
-      "going": 8,
+      "going": 16,
       "hosts": [
         "Zach"
       ]
