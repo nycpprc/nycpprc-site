@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Redirecting to Gnosis Events</title>
-<link rel="canonical" href="https://gnosis.events/">
-<meta http-equiv="refresh" content="0; url=https://gnosis.events/">
+<link rel="canonical" href="https://gnosis.events/preview">
+<meta http-equiv="refresh" content="0; url=https://gnosis.events/preview">
 <script>
 (function () {
   var path = location.pathname.replace(/^\/app/, "") || "/";
-  if (path === "/preview" || path === "/preview/") path = "/";
+  if (path === "/index.html") path = "/";
   location.replace("https://gnosis.events" + path + location.search + location.hash);
 })();
 </script>
 </head>
 <body>
-<p><a href="https://gnosis.events/">Continue to Gnosis Events</a></p>
+<p><a href="https://gnosis.events/preview">Continue to Gnosis Events</a></p>
 </body>
 </html>

@@ -1,12 +1,11 @@
 # nycpprc static site
 Plain HTML/CSS/JS. No build step. Deploy this folder as is.
 
-- Homepage: `index.html` sends `/` (nycpprc.org and www.nycpprc.org) to the public preview at `/app/preview/`. GitHub Pages cannot send an HTTP redirect, so the page uses a meta refresh plus `location.replace`. The members app at `/app/` is unchanged.
-- Beta: `app/preview/index.html` draws a small Beta label beside the club name on that preview only. The next `publish-web` from nycpprc-app overwrites that shell. Put the same label in the app’s public home (`preview.web.tsx` / `PublicHome`) so it survives the next publish.
-- Marketing backup: `/legacy/` is a snapshot of the previous marketing site, including the old homepage (`https://nycpprc.org/legacy/`). FAQ, host, donate, contact, newsletter, and partner stay at their current URLs. `/home`, `/about`, and `/events` redirect to `/legacy/` because those URLs were aliases of the old homepage. Privacy and terms stay at `/privacy/` and `/terms/`.
-- Revert the homepage: copy `legacy/index.html` over `index.html`. To make `/home`, `/about`, and `/events` follow `/` again, point those redirect files back at `/`.
+- Homepage: `index.html` is the NYCPPRC marketing page (the same copy that was parked at `/legacy/`). `/` on nycpprc.org serves it. www.nycpprc.org is a GitHub Pages 301 to the apex, so it gets the same page. This file must not redirect to gnosis.events.
+- Members app: `/app/` goes to https://gnosis.events/ (that URL is the account screen). `/app/preview/` keeps the path and goes to https://gnosis.events/preview (the public club page inside Gnosis Events). `/app/sign-in/` goes to https://gnosis.events/sign-in and keeps its query string and hash. `/app/sign-up/` and `/app/login/` go to https://gnosis.events/sign-in, which is the only account screen. Any other `/app/**` path is forwarded by `404.html` to the same path on https://gnosis.events (`/app/rooms` becomes `/chat`). GitHub Pages cannot send an HTTP redirect, so these pages use a meta refresh plus `location.replace`.
+- One marketing home: `/legacy/` redirects to `/`. The old homepage aliases `/home`, `/about`, and `/events` also redirect to `/`. Other `/legacy/` pages redirect to the live FAQ, host, donate, contact, and newsletter URLs. Privacy and terms stay at `/privacy/` and `/terms/`.
 - Local preview: `python3 -m http.server` in this folder.
-- Refresh Meetup data: `python3 ../scripts/update_meetup.py` writes data/events.json and data/hosts.json (standard library only). Run it on a schedule, e.g. a daily GitHub Action that commits the changes.
-- News: edit data/news.json. The News section is on the snapshotted marketing homepage (legacy/index.html), which reads legacy/data/news.json. The Meetup sync still writes data/events.json and data/hosts.json at the site root; the legacy copy is the snapshot from the cutover.
+- Refresh Meetup data: `python3 ../scripts/update_meetup.py` writes data/events.json and data/hosts.json (standard library only). Run it on a schedule, e.g. a daily GitHub Action that commits the changes. The homepage reads those files.
+- News: edit data/news.json. The News section on the homepage reads it.
 - Text: edit the HTML pages directly. FAQ = faq.html; forms = host.html and contact.html (partner.html and partner/ only redirect to contact.html).
-- Newsletter (Mailchimp): the live form is in newsletter.html. The snapshotted homepage form is in legacy/index.html.
+- Newsletter (Mailchimp): the live form is in newsletter.html and on the homepage.
