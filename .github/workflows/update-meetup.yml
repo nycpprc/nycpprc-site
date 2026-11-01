@@ -1,7 +1,7 @@
 name: Update Meetup data
+# The public site no longer renders Meetup JSON. Manual only, so a daily
+# run does not commit site/data and redeploy the redirect site.
 on:
-  schedule:
-    - cron: "17 11 * * *"
   workflow_dispatch:
 permissions:
   contents: write
