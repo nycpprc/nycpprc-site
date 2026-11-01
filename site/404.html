@@ -1,17 +1,23 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<title>Page not found · NYCPPRC</title>
-<script>
-// Unknown /app/** paths are the old members app. GitHub Pages serves this file for them.
-// Hand the path to Gnosis Events instead of bouncing back into /app/.
-(function(){
-  var l=location, path=l.pathname;
-  if(path.indexOf('/app/')!==0) return;
-  var rest=path.slice('/app'.length)||'/';
-  if(rest==='/rooms'||rest==='/rooms/') rest='/chat';
-  if(rest==='/sign-up'||rest==='/sign-up/'||rest==='/login'||rest==='/login/') rest='/sign-in';
-  l.replace('https://gnosis.events'+rest+l.search+l.hash);
-})();
-</script>
-<style>body{font:17px/1.6 Inter,system-ui,sans-serif;background:#faf7f1;color:#1d2433;display:grid;place-items:center;min-height:90vh;margin:0}a{color:#1c3d6e}</style>
-</head><body><p>Page not found. <a href="/">Go to nycpprc.org</a></p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+  Whole-site redirect to the NYCPPRC group on Gnosis Events.
+  GitHub Pages cannot emit an HTTP 301 for this content, so this file
+  uses a 0-second meta refresh (search engines treat delay 0 as a
+  permanent redirect) and location.replace. www.nycpprc.org still HTTP
+  301s to the apex (nycpprc.org) before this page runs.
+  The earlier index.html note that said not to redirect to gnosis.events
+  is superseded: every page, including this one, now goes to the group URL.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redirecting to Gnosis Events</title>
+<link rel="canonical" href="https://gnosis.events/g/reading-philosophy">
+<meta http-equiv="refresh" content="0; url=https://gnosis.events/g/reading-philosophy">
+<script>location.replace("https://gnosis.events/g/reading-philosophy");</script>
+</head>
+<body>
+<p><a href="https://gnosis.events/g/reading-philosophy">https://gnosis.events/g/reading-philosophy</a></p>
+</body>
+</html>
